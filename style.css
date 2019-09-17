@@ -260,8 +260,7 @@ div.wrapper-content aside.profile .followers ul li {
   height: 45px;
   background: #d0d5d9;
   border-radius: 50%;
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex: 1 0 auto;
   margin: 0 5px 10px 0;
 }
 
@@ -278,13 +277,12 @@ div.wrapper-content aside.profile .images ul li {
   height: 80px;
   background: #d0d5d9;
   border-radius: 8px;
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex: 1 0 auto;
   margin: 0 5px 5px 0;
 }
 
 div.wrapper-content .timeline {
-  flex-grow: 1;
+  flex: 1;
   background: #fff;
   margin: 10px 20px 0;
 }
@@ -309,6 +307,69 @@ div.wrapper-content .timeline nav a:first-child {
 
 div.wrapper-content .timeline nav a.active {
   color: #1f2226;
+}
+
+div.wrapper-content .timeline ul.tweets {
+  list-style: none;
+}
+
+div.wrapper-content .timeline ul.tweets li {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+  display: flex;
+}
+
+div.wrapper-content .timeline ul.tweets img.avatar-tweet {
+  margin-right: 10px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper-content .timeline ul.tweets li .info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #7b8b9a;
+  margin-left: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li .info p {
+  font-size: 14px;
+  color: #1f2326;
+  margin-top: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets .actions {
+  display: flex;
+  margin-top: 20px;
+}
+
+div.wrapper-content .timeline ul.tweets .actions a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #667580;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+div.wrapper-content .timeline ul.tweets .actions a:first-child {
+  margin-left: 0;
+}
+
+div.wrapper-content .timeline ul.tweets .actions a img {
+  margin-right: 5px;
 }
 
 div.wrapper-content aside.widgets {
